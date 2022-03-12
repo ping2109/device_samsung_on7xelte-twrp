@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_NAME := on7xelte
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -25,8 +24,10 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := on7xelte
 PRODUCT_NAME := omni_on7xelte
-PRODUCT_MODEL := Samsung Galaxy J7 Prime
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := Galaxy J7 Prime
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_RELEASE_NAME := Samsung Galaxy J7 Prime
